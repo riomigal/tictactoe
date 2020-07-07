@@ -8,32 +8,45 @@
 </head>
 
 <body>
-  <div class="container">
-    <div id="player-box">
-      <div id="player-one">
-        <div class="player-name">
-          Saverio
-        </div>
-        <div class="player-points">
-          45
-        </div>
+
+  <div class="container d-flex lead p-4">
+
+    <div class="col-6">
+      <div id="player1-name" class="font-weight-bold">
+
       </div>
-      <div id="player-two">
-        <div class="player-name">
-          Saverio2
+      <div id="player1-won" class="display-4">
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="float-right">
+        <div id="player2-name" class="font-weight-bold">
+
         </div>
-        <div class="player-points">
-          43
+        <div id="player2-won" class="display-4">
+
         </div>
       </div>
     </div>
 
-    <div id="game-area">
-      <button id="game-start-btn">Start Game</button>
-      <canvas id="game-board" width="500" height="500" style="border:1px solid #000000;">This browser doesn't support
+  </div>
+
+
+  <div id="game-area" class="container d-flex justify-content-center flex-wrap">
+
+    <button id="game-start-btn" class="btn btn-primary col-12 my-4">Start New Game</button>
+
+    <div class="col-12 d-flex justify-content-center">
+      <canvas id="game-board" width="300" height="300" class="my-4"
+        style="border:1px solid #000000;background-color: rgba(255,255,255,0.4)">This
+        browser
+        doesn't support
         canvas.</canvas>
     </div>
+    <p id="messageBox" class="display-4"></p>
+
   </div>
+
 </body>
 
 </html>

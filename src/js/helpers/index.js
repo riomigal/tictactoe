@@ -12,14 +12,13 @@
 function drawShape(context, type, x, y, width, height, color) {
   context.beginPath();
   context.strokeStyle = color;
-
+  context.globalAlpha = 0.3;
+  context.lineWidth = 5;
   if (type === 'SQUARE') {
     context.strokeRect(x, y, width, height);
   }
   if (type === 'CIRCLE') {
     context.arc(x + width / 2, y + height / 2, height / 2 - 3, 0, 2 * Math.PI, false);
-    context.globalAlpha = 0.3;
-    context.lineWidth = 5;
     context.stroke();
   }
   if (type === 'X') {
@@ -72,4 +71,15 @@ function checkGame(rectangles, player) {
   return false;
 }
 
-export { drawShape, checkGame };
+/**
+ * Reverse index to switch player
+ * @param {*} index
+ */
+function reverseIndex(index) {
+  if (index === 0) {
+    return 1;
+  }
+  return 0;
+}
+
+export { drawShape, checkGame, reverseIndex };
