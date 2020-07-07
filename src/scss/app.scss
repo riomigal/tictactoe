@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 900px;
+
+  padding: 3%;
+}
+
+// Player Container
+#player-one {
+  float: left;
+}
+
+#player-two {
+  float: right;
+}
+
+.player-name {
+  font-size: 25px;
+}
+
+.player-points {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#game-area {
+  clear: both; 
+}
+
+#game-board {
+  margin: 0 auto;
+  position: relative;
+  max-width: 600px;
+}
+
+#game-start-btn {
+  
+  font-size: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
